@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your@gmail.com',
-    pass: 'your-app-password'
+    user: 'bbgcustomersuccess@gmail.com',
+    pass: 'Bcs#2025@'
   }
 });
 
@@ -21,7 +21,7 @@ app.post('/send-emails', async (req, res) => {
 
   for (const email of emails) {
     await transporter.sendMail({
-      from: '"Bulk Mailer" <your@gmail.com>',
+      from: '"Bulk Mailer" <bbgcustomersuccess@gmail.com>',
       to: email,
       subject: "Hello from Bulk Mailer",
       text: "This is a test email sent in bulk."
