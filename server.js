@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: 'smtp.cloudzimail.com',
   auth: {
     user: 'bbgcustomersuccess@gmail.com',
     pass: 'Bcs#2025@'
